@@ -14,6 +14,11 @@ public class ItemToolbarPanel : ItemPanel
         Highlight(0);
     }
 
+    private void Update()
+    {
+        Show();
+    }
+
     public override void OnClick(int id)
     {
         toolbarController.Set(id);

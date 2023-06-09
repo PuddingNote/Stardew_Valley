@@ -51,6 +51,4 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
         highlight.gameObject.SetActive(b);
     }
 
-
-
 }

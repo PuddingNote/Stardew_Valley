@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c6be2233c64dfa47b4c4fa537d85b46, type: 3}
-  m_Name: Chest
+  m_Name: TreeLog
   m_EditorClassIdentifier: 
-  Name: Chest
+  Name: TreeLog
   stackable: 1
-  icon: {fileID: 21300000, guid: 4fddb881dc56a42cda0912425a4fec0b, type: 3}
+  icon: {fileID: 846760296, guid: 4acd16dff9e012e4c973ac42f91f763c, type: 3}

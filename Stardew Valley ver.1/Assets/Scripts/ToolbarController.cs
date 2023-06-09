@@ -12,6 +12,7 @@ public class ToolbarController : MonoBehaviour
 
     private void Update()
     {
+        // 마우스 휠로 툴바에서 아이템 지정
         float delta = Input.mouseScrollDelta.y;
         if (delta != 0)
         {

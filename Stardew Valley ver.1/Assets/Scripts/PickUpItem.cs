@@ -41,7 +41,7 @@ public class PickUpItem : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("no inventory container attached to the game manager");
+                //Debug.LogWarning("no inventory container attached to the game manager");
             }
 
             Destroy(gameObject);
