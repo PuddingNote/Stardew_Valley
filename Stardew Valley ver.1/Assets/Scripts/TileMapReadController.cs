@@ -6,25 +6,50 @@ using UnityEngine.Tilemaps;
 public class TileMapReadController : MonoBehaviour
 {
     [SerializeField] Tilemap tilemap;
+    [SerializeField] List<TileData> tileDatas;
+    Dictionary<TileBase, TileData> dataFromTiles;
 
-    private void Update()
+    private void Start()
     {
-        if (Input.GetMouseButtonDown(0))
+        dataFromTiles = new Dictionary<TileBase, TileData>();
+        
+        foreach (TileData tileData in tileDatas)
         {
-            GetTileBase(Input.mousePosition);
+            foreach (TileBase tile in tileData.tiles)
+            {
+                dataFromTiles.Add(tile, tileData);
+            }
         }
     }
 
-    public TileBase GetTileBase(Vector2 mousePosition)
+    public Vector3Int GetGridPosition(Vector2 position, bool mousePosition)
     {
-        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-       
+        Vector2 worldPosition;
+
+        if (mousePosition)
+        {
+            worldPosition = Camera.main.ScreenToWorldPoint(position);
+        }
+        else
+        {
+            worldPosition = position;
+        }
+
         Vector3Int gridPosition = tilemap.WorldToCell(worldPosition);
-        Camera.main.ScreenToViewportPoint(mousePosition);
+
+        return gridPosition;
+    }
+
+    public TileBase GetTileBase(Vector3Int gridPosition)
+    {
         TileBase tile = tilemap.GetTile(gridPosition);
 
-        Debug.Log("Tile in position =" + gridPosition + " is " + tile);
-
-        return null;
+        return tile;
     }
+
+    public TileData GetTileData(TileBase tilebase)
+    {
+        return dataFromTiles[tilebase];
+    }
+
 }
