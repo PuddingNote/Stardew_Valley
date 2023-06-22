@@ -15,3 +15,4 @@ MonoBehaviour:
   Name: Axe
   stackable: 0
   icon: {fileID: 21300000, guid: b61d47e2aa13cba48b5dc48f9abef854, type: 3}
+  itemDesc: This is Axe

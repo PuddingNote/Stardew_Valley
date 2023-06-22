@@ -39,10 +39,6 @@ public class PickUpItem : MonoBehaviour
             {
                 GameManager.instance.inventoryContainer.Add(item, count);
             }
-            else
-            {
-                //Debug.LogWarning("no inventory container attached to the game manager");
-            }
 
             Destroy(gameObject);
         }

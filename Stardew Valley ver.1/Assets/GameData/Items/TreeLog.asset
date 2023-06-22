@@ -15,3 +15,4 @@ MonoBehaviour:
   Name: TreeLog
   stackable: 1
   icon: {fileID: 846760296, guid: 4acd16dff9e012e4c973ac42f91f763c, type: 3}
+  itemDesc: This is TreeLog
