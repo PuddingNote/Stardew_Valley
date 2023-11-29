@@ -5,33 +5,33 @@ using UnityEngine;
 
 public class ToolbarController : MonoBehaviour
 {
-    [SerializeField] int toolbarSize = 12;
-    int selectedTool;
+    //[SerializeField] int toolbarSize = 12;
+    //int selectedTool;
 
-    public Action<int> onChange;
+    //public Action<int> onChange;
 
-    private void Update()
-    {
-        // 마우스 휠로 툴바에서 아이템 지정
-        float delta = Input.mouseScrollDelta.y;
-        if (delta != 0)
-        {
-            if (delta > 0)
-            {
-                selectedTool += 1;
-                selectedTool = (selectedTool >= toolbarSize ? 0 : selectedTool);
-            }
-            else
-            {
-                selectedTool -= 1;
-                selectedTool = (selectedTool <= 0 ? toolbarSize - 1 : selectedTool);
-            }
-            onChange?.Invoke(selectedTool);
-        }
-    }
+    //private void Update()
+    //{
+    //    // 마우스 휠로 툴바에서 아이템 지정
+    //    float delta = Input.mouseScrollDelta.y;
+    //    if (delta != 0)
+    //    {
+    //        if (delta > 0)
+    //        {
+    //            selectedTool += 1;
+    //            selectedTool = (selectedTool >= toolbarSize ? 0 : selectedTool);
+    //        }
+    //        else
+    //        {
+    //            selectedTool -= 1;
+    //            selectedTool = (selectedTool <= 0 ? toolbarSize - 1 : selectedTool);
+    //        }
+    //        onChange?.Invoke(selectedTool);
+    //    }
+    //}
 
-    internal void Set(int id)
-    {
-        selectedTool = id;
-    }
+    //internal void Set(int id)
+    //{
+    //    selectedTool = id;
+    //}
 }

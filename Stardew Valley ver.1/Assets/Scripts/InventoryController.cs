@@ -6,7 +6,7 @@ public class InventoryController : MonoBehaviour
 {
     [SerializeField] GameObject panel;
     [SerializeField] GameObject toolbarPanel;
-    bool isPause = false;
+    private bool isPause = false;
 
     private void Awake()
     {
@@ -22,13 +22,13 @@ public class InventoryController : MonoBehaviour
 
             if (isPause == false)
             {
-                Time.timeScale = 0;
+                Time.timeScale = 0f;
                 isPause = true;
                 return;
             }
             if (isPause == true)
             {
-                Time.timeScale = 1;
+                Time.timeScale = 1f;
                 isPause = false;
                 return;
             }

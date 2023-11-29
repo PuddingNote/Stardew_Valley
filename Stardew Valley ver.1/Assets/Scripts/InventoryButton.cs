@@ -8,7 +8,7 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] Image icon;
     [SerializeField] Text text;
-    [SerializeField] Image highlight;
+    //[SerializeField] Image highlight;
 
     [HideInInspector] public int myIndex;
 
@@ -46,9 +46,9 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
         itemPanel.OnClick(myIndex);
     }
 
-    public void Highlight(bool b)
-    {
-        highlight.gameObject.SetActive(b);
-    }
+    //public void Highlight(bool b)
+    //{
+    //    highlight.gameObject.SetActive(b);
+    //}
 
 }
