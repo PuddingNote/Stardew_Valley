@@ -26,7 +26,7 @@ public class ItemDragAndDropController : MonoBehaviour
         }
     }
 
-    internal void OnClick(ItemSlot itemSlot)
+    public void OnClick(ItemSlot itemSlot)
     {
         if (this.itemSlot.item == null)
         {
