@@ -5,13 +5,13 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterController2D : MonoBehaviour
 {
-    Rigidbody2D rigidbody2d;
-    [SerializeField] float speed = 2f;
+    public Rigidbody2D rigidbody2d;
+    public float speed = 2f;
 
-    Vector2 motionVector;
+    public Vector2 motionVector;
     public Vector2 lastMotionVector;
 
-    Animator animator;
+    public Animator animator;
 
     public bool moving;
 

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ToolsCharacterController : MonoBehaviour
 {
-    CharacterController2D character;
-    Rigidbody2D rigid2D;
-    [SerializeField] float offsetDistance = 1f;
-    [SerializeField] float sizeOfInteractableArea = 0.1f;
+    public CharacterController2D character;
+    public Rigidbody2D rigid2D;
+    public float offsetDistance = 1f;
+    public float sizeOfInteractableArea = 0.1f;
 
     private void Awake()
     {

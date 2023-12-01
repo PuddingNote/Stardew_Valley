@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class InventoryController : MonoBehaviour
 {
-    [SerializeField] GameObject panel;
-    [SerializeField] GameObject toolbarPanel;
-    private bool isPause = false;
+    public GameObject panel;
+    public GameObject toolbarPanel;
+    public bool isPause = false;
 
     private void Awake()
     {

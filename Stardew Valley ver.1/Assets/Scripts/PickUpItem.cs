@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PickUpItem : MonoBehaviour
 {
-    Transform player;
-    [SerializeField] float speed = 3f;
-    [SerializeField] float pickUpDistance = 1.5f;
-    [SerializeField] float ttl = 10f;
+    public Transform player;
+    public float speed = 3f;
+    public float pickUpDistance = 1.5f;
+    public float ttl = 10f;
 
     public Item item;
     public int count = 1;
